@@ -1,0 +1,19 @@
+.app {
+  width: 100%;
+  height: calc(100dvh - 2 * var(--padding-body));
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.app > * {
+  text-align: center;
+}
+
+.app__header {
+}
+
+.app__content {
+}
+
+.app__footer {
+}

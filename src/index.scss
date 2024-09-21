@@ -1,0 +1,81 @@
+:root {
+  --color-basic-green: #99b898;
+  --color-basic-pink: #f66596;
+  --color-dark-gray: #2a363b;
+  --padding-body: 3rem;
+}
+
+// 1em = 16px
+@mixin screen($breakpoint) {
+  @if $breakpoint == phone {
+    // 600px
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    // 900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    // 1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desk {
+    // 1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10 px => 10/16 = 62.5%
+
+  @include screen(big-desk) {
+    font-size: 75%; // 1rem = 12 px => 12/16 = 75%
+  }
+
+  @include screen(tab-land) {
+    font-size: 56.25%; // 1rem = 9 px => 9/16 = 56.25%
+  }
+
+  @include screen(tab-port) {
+    font-size: 50%; // 1rem = 8 px => 8/16 = 50%
+  }
+
+  @include screen(phone) {
+    font-size: 31.25%; // 1rem = 5px => 5/16 = 31.25%
+  }
+}
+
+body {
+  padding: var(--padding-body);
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-basic-pink);
+  box-sizing: border-box;
+  background-color: var(--color-dark-gray);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
