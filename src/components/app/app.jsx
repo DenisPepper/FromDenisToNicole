@@ -1,4 +1,4 @@
-import { Link, Outlet, ScrollRestoration } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import './app.scss';
 import { Heading } from '../heading/heading';
 
