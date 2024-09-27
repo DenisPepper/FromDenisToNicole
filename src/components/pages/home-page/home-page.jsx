@@ -8,6 +8,7 @@ import bigSkyIce from '/src/assets/big-sky-ice.jpg';
 import watermalow from '/src/assets/watermalow.jpg';
 import corn from '/src/assets/corn.jpg';
 import oneCent from '/src/assets/one-cent.jpg';
+import sunRise from '/src/assets/sunrise.jpg';
 
 export function HomePage() {
   return (
@@ -35,6 +36,9 @@ export function HomePage() {
       </li>
       <li>
         <img width={300} height={370} src={oneCent} alt='oneCent' />
+      </li>
+      <li>
+        <img width={300} height={370} src={sunRise} alt='sunRise' />
       </li>
     </ul>
   );
