@@ -9,6 +9,7 @@ import watermalow from '/src/assets/watermalow.jpg';
 import corn from '/src/assets/corn.jpg';
 import oneCent from '/src/assets/one-cent.jpg';
 import sunRise from '/src/assets/sunrise.jpg';
+import giftFromNicole from '/src/assets/image-from-Nicole.jpg';
 
 export function HomePage() {
   return (
@@ -39,6 +40,9 @@ export function HomePage() {
       </li>
       <li>
         <img width={300} height={370} src={sunRise} alt='sunRise' />
+      </li>
+      <li>
+        <img width={300} height={370} src={giftFromNicole} alt='giftFromNicole' />
       </li>
     </ul>
   );
