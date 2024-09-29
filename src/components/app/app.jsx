@@ -8,7 +8,9 @@ export function App() {
     <div className='app'>
       <header className='app__header'>
         <img className='logo' src={logo} alt='app logo' />
-        <Heading>Site about cats and more...</Heading>
+        <Heading clss='app_title'>
+          Site about cats and more...
+        </Heading>
       </header>
       <ScrollRestoration />
       <main className='app__content'>

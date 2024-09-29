@@ -10,10 +10,10 @@
 }
 
 .app__header {
+  max-width: 800px;
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -21,9 +21,13 @@
   display: block;
   width: 10rem;
   height: 10rem;
+  margin-left: 1rem;
   flex: 0 0 10rem;
-  
   object-fit: cover;
   border-radius: 50%;
   border: 0.2rem solid var(--color-basic-pink);
+}
+
+.app_title {
+  flex: 1 1 auto;
 }
