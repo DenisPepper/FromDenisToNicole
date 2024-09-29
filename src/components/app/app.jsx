@@ -1,11 +1,13 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom';
 import './app.scss';
 import { Heading } from '../heading/heading';
+import logo from '/src/assets/logo.jpg';
 
 export function App() {
   return (
     <div className='app'>
       <header className='app__header'>
+        <img className='logo' src={logo} alt='app logo' />
         <Heading>Site about cats and more...</Heading>
       </header>
       <ScrollRestoration />

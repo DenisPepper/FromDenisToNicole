@@ -10,10 +10,17 @@
 }
 
 .app__header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.app__content {
-}
-
-.app__footer {
+.logo {
+  display: block;
+  width: 10rem;
+  flex: 0 0 10rem;
+  height: auto;
+  object-fit: cover;
 }
